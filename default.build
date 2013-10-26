@@ -1,0 +1,22 @@
+<project name="Trains" default="unitTest">
+
+	<property name="workingdir" value="${directory::get-current-directory()}" />
+	<property name="MSBuild" value="C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe"/>
+	<property name="MStest" value="C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\MSTest.exe"/>
+	<property name="Configuration" value="Debug"/>
+    
+	<target name="compile">
+		<exec program="${MSBuild}" workingdir="${workingdir}" verbose="true" append="true" failonerror="true" timeout="7200000">
+			<arg line="Trains.sln /t:Clean;Rebuild"/>
+		</exec>
+	</target>
+
+	<target name="unitTest" depends="compile">
+		<delete file="${workingdir}\TrainTests.trx" />
+		<echo message="${workingdir}\TrainsTest\bin\Debug\TrainTests.dll"/>
+		<exec program="${MStest}" workingdir="${workingdir}" verbose="true" append="true" failonerror="true" timeout="7200000">
+			<arg line="/testcontainer:TrainsTest\bin\Debug\TrainsTest.dll /resultsfile:TrainTests.trx"/>
+		</exec>
+	</target>
+
+</project>

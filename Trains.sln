@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trains", "Trains\Trains.csproj", "{15E07804-E618-4545-9B90-BA1CD8AF5515}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainsTest", "TrainsTest\TrainsTest.csproj", "{35C9151B-7542-409C-9E19-D220EA4013F8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15E07804-E618-4545-9B90-BA1CD8AF5515}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15E07804-E618-4545-9B90-BA1CD8AF5515}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15E07804-E618-4545-9B90-BA1CD8AF5515}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15E07804-E618-4545-9B90-BA1CD8AF5515}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35C9151B-7542-409C-9E19-D220EA4013F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35C9151B-7542-409C-9E19-D220EA4013F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35C9151B-7542-409C-9E19-D220EA4013F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35C9151B-7542-409C-9E19-D220EA4013F8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
